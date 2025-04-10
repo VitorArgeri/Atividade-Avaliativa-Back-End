@@ -70,7 +70,7 @@ Este é um projeto de back-end desenvolvido como parte de uma atividade avaliati
     "price": 69.99,
     "releaseYear": 2022,
     "developer": "Santa Monica Studio",
-    "genres": "Ação,Aventura",
+    "genres": "Ação, Aventura",
     "platforms": "PlayStation 4,PlayStation 5",
     "imageURL": "https://example.com/god-of-war-ragnarok.jpg",
     "createdAt": "2025-04-10T12:00:00.000Z",
@@ -87,7 +87,7 @@ Este é um projeto de back-end desenvolvido como parte de uma atividade avaliati
     "price": 59.99,
     "releaseYear": 2017,
     "developer": "Nintendo",
-    "genres": "Ação,Aventura",
+    "genres": "Ação, Aventura",
     "platforms": "Nintendo Switch",
     "imageURL": "https://example.com/zelda.jpg"
   }
@@ -163,3 +163,4 @@ Este é um projeto de back-end desenvolvido como parte de uma atividade avaliati
 
 4. **API RESTful**:
    - A API foi projetada seguindo os princípios REST para facilitar a integração com clientes.
+
