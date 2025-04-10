@@ -29,11 +29,11 @@ class GamesModel {
   async create(
     title,
     price,
-    releaseYear,
+    releaseYear = null,
     developer,
-    genres,
-    platforms,
-    imageUrl
+    genres = null, 
+    platforms = null, 
+    imageUrl = null 
   ) {
     const newGame = await prisma.games.create({
       data: {

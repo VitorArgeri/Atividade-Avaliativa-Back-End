@@ -33,28 +33,20 @@ class GamesController {
   // POST /api/games
   async createGame(req, res) {
     try {
-      // Validação básica
+      // Extraindo os dados do corpo da requisição
       const {
         title,
         price,
-        releaseYear,
+        releaseYear = null,
         developer,
-        genres,
-        platforms,
-        imageUrl,
+        genres = null,
+        platforms = null,
+        imageUrl = null,
       } = req.body;
 
-      // Verifica se todos os campos do game foram fornecidos
-      if (
-        !title ||
-        !price ||
-        !releaseYear ||
-        !developer ||
-        !genres ||
-        !platforms ||
-        !imageUrl
-      ) {
-        return res.status(400).json({ error: "Todos os campos são obrigatórios" });
+      // Validação básica para os campos obrigatórios
+      if (!title || !price || !developer) {
+        return res.status(400).json({ error: "Os campos 'title', 'developer' e 'price' são obrigatórios." });
       }
 
       // Criar o novo game
@@ -68,17 +60,13 @@ class GamesController {
         imageUrl
       );
 
-      if (!newGame) {
-        return res.status(400).json({ error: "Erro ao criar game" });
-      }
-
+      // Retornar o game criado
       res.status(201).json(newGame);
     } catch (error) {
       console.error("Erro ao criar game:", error);
       res.status(500).json({ error: "Erro ao criar game" });
     }
   }
-
   // PUT /api/games/:id
   async updateGame(req, res) {
     try {

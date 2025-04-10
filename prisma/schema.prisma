@@ -48,12 +48,12 @@ model Personagem {
 model Games {
     id          Int     @id @default(autoincrement())
     title       String
-    price       Float 
+    price       Float
     releaseYear Int?
     developer   String
-    genres      String
-    platforms   String
-    imageUrl    String
+    genres      String?
+    platforms   String?
+    imageUrl    String?
     createdAt   DateTime @default(now())
     updatedAt   DateTime @updatedAt
 
