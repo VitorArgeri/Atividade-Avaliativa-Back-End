@@ -1,7 +1,7 @@
 import express from "express";
 import { config } from "dotenv";
 
-import animesRouter from "./routes/animeRoutes.js";
+import gamesRouter from "./routes/gamesRoutes.js";
 
 config(); // Carrega variáveis de ambiente do arquivo .env
 const port = process.env.PORT || 4001; // Define a porta do servidor
@@ -11,11 +11,11 @@ const app = express();
 
 app.use(express.json()); // Parse de JSON
 
-app.use("/animes", animesRouter); // Usar as rotas de animes
+app.use("/games", gamesRouter); // Usar as rotas de games
 
 // Rota base para verificar se o servidor está rodando
 app.get("/", (req, res) => {
-  res.json({ message: "API de Coleção de Animes funcionando!" });
+  res.json({ message: "API de Coleção de Games funcionando!" });
 });
 
 // Iniciar o servidor
