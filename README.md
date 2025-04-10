@@ -22,7 +22,7 @@ Este é um projeto de back-end desenvolvido como parte de uma atividade avaliati
 
 3. Configure o banco de dados:
   Crie um arquivo .env na raiz do projeto com a variável DATABASE_URL apontando para o seu banco de dados. Exemplo:
-
+  DATABASE_URL="file:./dev.db"
 
 4. Execute as migrações do Prisma:
   npx prisma migrate dev
@@ -51,7 +51,7 @@ Este é um projeto de back-end desenvolvido como parte de uma atividade avaliati
       "price": 69.99,
       "releaseYear": 2022,
       "developer": "Santa Monica Studio",
-      "genres": "Ação,Aventura",
+      "genres": "Ação, Aventura",
       "platforms": "PlayStation 4,PlayStation 5",
       "imageURL": "https://example.com/god-of-war-ragnarok.jpg",
       "createdAt": "2025-04-10T12:00:00.000Z",
