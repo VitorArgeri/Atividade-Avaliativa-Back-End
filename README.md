@@ -1,6 +1,6 @@
 # Atividade Avaliativa Back-End
 
-Este é um projeto de back-end desenvolvido como parte de uma atividade avaliativa. Ele fornece uma API para gerenciar informações sobre jogos, animes e personagens.
+Este é um projeto de back-end desenvolvido como parte de uma atividade avaliativa. Ele fornece uma API para gerenciar informações sobre jogos.
 
 ## 🚀 Como instalar e executar o projeto
 
